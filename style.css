@@ -68,3 +68,10 @@ nav a:hover {
     margin-right: 5em;
 }
 
+footer {
+    width: 100%;
+    background-color: rgb(29, 122, 243);
+    margin-top: 150px;
+    padding: 20px 0px;
+}
+
