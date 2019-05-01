@@ -1,0 +1,70 @@
+body {
+    background-color: #002554 !important;
+margin: 0;
+font-family: 'Neuton', serif;
+
+
+}
+
+
+.container {
+width: 90%;
+margin: 0 auto;
+}
+
+header {
+background: rgb(29, 122, 243);
+
+}
+header::after {
+content: '';
+display: table;
+clear: both;
+
+
+}
+.logo {
+width: 15em;
+height: auto;
+float: left;
+}
+
+nav {
+float: right;
+
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+nav li {
+display: inline-block;
+margin: 0 3em;
+
+padding-top: 3em;
+}
+
+nav a {
+color: #1b1b1b;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 200%;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+#myCarousel {
+    display: inline-block;
+    
+}
+
+.twitter-timeline {
+    float: right;
+    margin-right: 5em;
+}
+
