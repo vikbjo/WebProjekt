@@ -1,7 +1,6 @@
 body {
     background-color: #002554 !important;
 margin: 0;
-font-family: 'Neuton', serif;
 
 
 }
@@ -26,12 +25,14 @@ clear: both;
 .logo {
 width: 15em;
 height: auto;
-float: left;
 }
 
 nav {
+display: flex;
+align-items: center;
 float: right;
-
+font-family: 'Poppins', sans-serif;
+font-weight: bold;
 }
 
 nav ul {
@@ -42,7 +43,7 @@ list-style: none;
 
 nav li {
 display: inline-block;
-margin: 0 3em;
+margin: 0 4em;
 
 padding-top: 3em;
 }
@@ -51,11 +52,11 @@ nav a {
 color: #1b1b1b;
 text-decoration: none;
 text-transform: uppercase;
-font-size: 200%;
+font-size: 175%;
 }
 
 nav a:hover {
-    color: blue;
+    color: rgb(187, 185, 185);
 }
 
 #myCarousel {
