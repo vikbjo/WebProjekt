@@ -61,7 +61,8 @@ nav a:hover {
 
 #myCarousel {
     display: inline-block;
-    
+    width: 50em; 
+    margin-left: 25em;   
 }
 
 .twitter-timeline {
@@ -76,27 +77,19 @@ footer {
     padding: 20px 0px;
 }
 
-div.gallery {
-    display: inline-block;
-    position: relative;
-    left: 40em; 
-    margin: 5px;
-    border: 1px solid #ccc;
-    width: 180px;
-    
+* {
+    box-sizing: border-box;
   }
   
-  div.gallery:hover {
-    border: 1px solid #777;
+  .column {
+    float: left;
+    margin-left: 3%;
+    width: 30%;
+    padding: 30px;
   }
   
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-    background-color: white; 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
