@@ -1,5 +1,8 @@
 body {
-    background-color: #002554 !important;
+ 
+background: linear-gradient(rgba(10,49,79,.79),rgba(0,15,42,.89)), 
+url('img/bg1.jpg') no-repeat center;
+background-size: cover;
 margin: 0;
 
 
@@ -73,7 +76,7 @@ nav a:hover {
 footer {
     width: 100%;
     background-color: rgb(29, 122, 243);
-    margin-top: 150px;
+    margin-top: 250px;
     padding: 20px 0px;
 }
 
@@ -92,4 +95,15 @@ footer {
     content: "";
     clear: both;
     display: table;
+  }
+
+  .arkiv{
+    color:black;
+    font-size: 21px;
+    text-align: center;
+    border: 0px;
+    margin: 0 10em;
+    background: white;
+    word-wrap: break-word;
+    white-space: pre;
   }
