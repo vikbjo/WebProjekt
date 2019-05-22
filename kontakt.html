@@ -35,20 +35,28 @@
         <img src="img/stripe.png" alt="stripe" class="stripe">
     </header>
 
-    <main>
-        <p>SEND EMAIL</p>
+    <section class="form">
+        <!-- ett form man kan använda för att kontakta oss jag anväder en br tag som "line breakar" så de hamnar under varandra -->
+        <p>Kontaka oss!</p>
         <form action="forum.php" class="kontakta-form"></form>
-        <input type="text" name="name" placeholder="Ditt namn">
-        <input type="text" name="mail" placeholder="Din email">
-        <input type="text" name="subjekt" placeholder="ämne">
-        <textarea name="meddelande" placeholder="Meddelande"></textarea>
-        <button type="submit" name="submit">Skcika Mail</button>
-    </main>
+        <p>Name:<br>
+            <input type="text" name="name" placeholder="Ditt namn">
+            <br>
+            Mail: <br>
+            <input type="text" name="mail" placeholder="Din email">
+            <br>
+            Meddelande: <br>
+            <input type="text" name="subjekt" placeholder="ämne">
+            <br>
+            <textarea name="meddelande" placeholder="Meddelande"></textarea>
+            <br>
+            <button type="submit" name="submit">Skcika Mail</button>
+    </section>
 
     <footer>
-        <div class="wrapper">
+        <div>
             <ul>
-                
+
 
             </ul>
         </div>

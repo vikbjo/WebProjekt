@@ -74,6 +74,9 @@ nav a:hover {
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
     width: 100%;
     background-color: rgb(29, 122, 243);
     margin-top: 250px;
@@ -107,3 +110,19 @@ footer {
     white-space: pre;
   }
 
+.form {
+  position: static;
+  text-align: center;
+  margin: 2em 50em;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  background: white;
+  background-image: linear-gradient(rgb(9, 80, 173), rgb(29, 122, 243));
+}
+
+.form > p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: rgb(128, 169, 223);
+}
