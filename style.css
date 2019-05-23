@@ -126,3 +126,76 @@ footer {
   font-size: 2em;
   color: rgb(128, 169, 223);
 }
+
+.svg {
+  border: 1px solid white;
+ }
+ text {
+   font-weight:bold;
+   font-size:350%;
+ }
+ rect {
+    stroke-dasharray: 135,70;
+    
+ }
+
+.click {
+  height: 10em;
+  margin-left: 60em;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+}
+.click:hover {
+  height: 10em;
+  margin-left: 60em;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+}
+
+.txt {
+text-align: center;
+color: rgb(29, 122, 243);
+font-family: 'Poppins', sans-serif;
+}
+
+table {
+  font-family: 'Poppins', sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  height: 25em;
+  margin-left: 31em;
+  color: white;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: underline;
+  -webkit-animation: color-change 1s infinite;
+  animation: color-change 1s infinite;
+}
+
+@-webkit-keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
+}
+
+
+
+tr:nth-child(even) {
+  background-color: rgb(29, 122, 243);
+}
+tr:nth-child(odd) {
+  background-color: rgb(1, 42, 95);
+}
+
