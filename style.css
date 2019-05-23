@@ -1,114 +1,126 @@
 body {
- 
-background: linear-gradient(rgba(10,49,79,.79),rgba(0,15,42,.89)), 
-url('img/bg1.jpg') no-repeat center;
-background-size: cover;
-margin: 0;
-
-
+  /* här lägger jag till en bakgrunds bild med en gradient som 
+  gör att bilden blir fade:ad, använder dessutom en size som tänker hela skärmen */
+  background: linear-gradient(rgba(10, 49, 79, 0.79), rgba(0, 15, 42, 0.89)),
+    url("img/bg1.jpg") no-repeat center;
+  background-size: cover;
+  margin: 0;
 }
 
-
 .container {
-width: 90%;
-margin: 0 auto;
+  /* ser till så att innerhålet i naven alltid har 0 i margin */
+  margin: 0 auto;
 }
 
 header {
-background: rgb(29, 122, 243);
-
+  /* lägger dit en bakgrundsfärg från sida till sida på naven */
+  background: rgb(29, 122, 243);
 }
 header::after {
-content: '';
-display: table;
-clear: both;
-
-
+  /* ser till så att alla bakgrunds bilder och borders osv hamnar runt allt i naven (evem kallat clearfix) */
+  content: "";
+  display: table;
+  clear: both;
 }
 .logo {
-width: 15em;
-height: auto;
+  width: 15em;
+  height: auto;
 }
 
 nav {
-display: flex;
-align-items: center;
-float: right;
-font-family: 'Poppins', sans-serif;
-font-weight: bold;
+  /* ser till så att allt i naven hamnar brevid varandra
+  och att allt är rätt font och gör den bold */
+  align-items: center;
+  float: right;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 nav ul {
-margin: 0;
-padding: 0;
-list-style: none;
+  /* eftersom naven är en lista så tar jag bort all padding och margins 
+  som redan finns och sedan tar bort punkterna som finns listan */
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav li {
-display: inline-block;
-margin: 0 4em;
+  /* inline block gör så att elementen inte tar upp en hel rad vilket
+  gör det möjligt att lägga de brevid varanda */
+  display: inline-block;
+  margin: 0 4em;
 
-padding-top: 3em;
+  padding-top: 3em;
 }
 
 nav a {
-color: #1b1b1b;
-text-decoration: none;
-text-transform: uppercase;
-font-size: 175%;
+  color: #1b1b1b;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 175%;
 }
 
 nav a:hover {
-    color: rgb(187, 185, 185);
+  /* håller man mussen över meny alternativen byter den färg */
+  color: rgb(187, 185, 185);
 }
 
 #myCarousel {
-    display: inline-block;
-    width: 50em; 
-    margin-left: 25em;   
+  /* samma prinsip med inline blocket fast de nu shiftar vilken 
+  bild som syns i bootstrap karuselen */
+  display: inline-block;
+  width: 50em;
+  margin-left: 25em;
 }
 
 .twitter-timeline {
-    float: right;
-    margin-right: 5em;
+  float: right;
+  margin-right: 5em;
 }
 
 footer {
+  /* postion fixed gör så att footern alltid kommer liga längs ner på sidan
+  even om man scrollar */
   position: fixed;
   left: 0;
   bottom: 0;
-    width: 100%;
-    background-color: rgb(29, 122, 243);
-    margin-top: 250px;
-    padding: 20px 0px;
+  width: 100%;
+  background-color: rgb(29, 122, 243);
+  margin-top: 250px;
+  padding: 20px 0px;
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  .column {
-    float: left;
-    margin-left: 3%;
-    width: 30%;
-    padding: 30px;
-  }
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+footer li {
+  list-style: none;
+}
 
-  .arkiv{
-    color:black;
-    font-size: 21px;
-    text-align: center;
-    margin: 50px 10em;
-    background: white;
-    word-wrap: break-word;
-    white-space: pre;
-  }
+.column {
+  /* floaten gör så att varje rad börjar til vänster och resten gör
+  så att det blir ett jämt mellanrum mellan alla biderna */
+  float: left;
+  margin-left: 3%;
+  width: 30%;
+  padding: 30px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.arkiv {
+  /* word wrap va något väldigt användbart jag lärde mig, det gör
+  så att texten inte kan gå utanför div utan byter då rad. dessutom white spacing
+  som gör så att det blir vitt område när man läger ord i en ensam rad  */
+  color: black;
+  font-size: 21px;
+  text-align: center;
+  margin: 50px 10em;
+  background: white;
+  word-wrap: break-word;
+  white-space: pre;
+}
 
 .form {
   position: static;
@@ -121,49 +133,45 @@ footer {
 }
 
 .form > p {
-  font-family: 'Poppins', sans-serif;
+  /* använder mig av child combinator för att styla mitt form */
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 2em;
   color: rgb(128, 169, 223);
 }
 
-.svg {
-  border: 1px solid white;
- }
- text {
-   font-weight:bold;
-   font-size:350%;
- }
- rect {
-    stroke-dasharray: 135,70;
-    
- }
+text {
+  font-weight: bold;
+  font-size: 350%;
+}
+rect {
+  stroke-dasharray: 135, 70;
+}
 
 .click {
+  /* först vanlig css för att få bilden att vara där jag vill,
+  sedna har jag en transition som behövs för att jag ska kunna använda 
+  min andra animaton */
   height: 10em;
   margin-left: 60em;
   -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
 }
 .click:hover {
+  /* sedan har jag användt transform animation för att rotera bilden
+  när man håller musen över */
   height: 10em;
   margin-left: 60em;
   -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
 }
 
 .txt {
-text-align: center;
-color: rgb(29, 122, 243);
-font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: rgb(29, 122, 243);
+  font-family: "Poppins", sans-serif;
 }
 
 table {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-collapse: collapse;
   width: 50%;
   height: 25em;
@@ -171,12 +179,15 @@ table {
   color: white;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
 th {
+  /* ännu en animation som i detta fall använder en color change animation 
+ som kommer byta färg varje 1 sekund för eveigt */
   font-weight: bold;
   font-size: 1.5em;
   text-decoration: underline;
@@ -185,17 +196,24 @@ th {
 }
 
 @-webkit-keyframes color-change {
-  0% { color: red; }
-  50% { color: blue; }
-  100% { color: red; }
+  /* fägerna som roteras */
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
 }
 
-
-
 tr:nth-child(even) {
+  /* detta nyfta sak väder varje jämt värde som är barn 
+  tr taggen och sedan har jag valt en färg på de. på detta sätt kan jag ha
+  olika fäger */
   background-color: rgb(29, 122, 243);
 }
 tr:nth-child(odd) {
   background-color: rgb(1, 42, 95);
 }
-
